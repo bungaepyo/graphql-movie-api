@@ -1,0 +1,12 @@
+{
+  "name": "graphql-movie-api",
+  "version": "1.0.0",
+  "description": "GraphQL API",
+  "main": "index.js",
+  "repository": "https://github.com/bungaepyo/graphql-movie-api",
+  "author": "Ju Mong Ko",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}
