@@ -1,5 +1,4 @@
-// import { getMovies, getById, addMovie, deleteMovie } from './db.js';
-import {getMovies} from './db_rest.js'
+import {getMovies, getMovie, getSuggestions} from './db_rest.js'
 
 // const resolvers = {
 //     Query: {
@@ -14,7 +13,9 @@ import {getMovies} from './db_rest.js'
 
 const resolvers = {
     Query: {
-        movies: (_, {limit, rating}) => getMovies(limit, rating)
+        movies: (_, {limit, rating}) => getMovies(limit, rating),
+        movie: (_, {id}) => getMovie(id),
+        suggestions: (_, {id}) => getSuggestions(id)
     }
 };
 
